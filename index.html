@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Wallpaper Ads</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff4b5c;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e43a4a;
+    transform: scale(1.05);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Perfect Wallpaper Ads</h1>
+        <p>This is a simple website for hosting the app-ads.txt file for AdMob verification.</p>
+        <a href="/app-ads.txt" class="btn">View app-ads.txt</a>
+    </div>
+   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.container');
+    container.style.opacity = '0';
+    container.style.transition = 'opacity 1s ease';
+    setTimeout(() => {
+        container.style.opacity = '1';
+    }, 100);
+});
+   </script>
+</body>
+</html>
